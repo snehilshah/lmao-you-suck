@@ -1,4 +1,4 @@
 import qrcode
-img = qrcode.make('https://www.youtube.com/watch?v=PKuJoiP5wf0')
+img = qrcode.make('linkdin.com/in/your-profile')
 type(img)  # qrcode.image.pil.PilImage
-img.save("qr.png")
+img.save("./QR/qr.png")
