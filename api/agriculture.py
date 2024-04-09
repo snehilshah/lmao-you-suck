@@ -7,8 +7,7 @@ import time
 
 
 def get_types(df):
-    df["Price Date"] = pd.to_datetime(df["Price Date"])
-    df["Price Date"] = df['Price Date'].dt.date
+    df["Price Date"] = pd.to_datetime(df['Price Date']).dt.date
     df["Min Price (Rs./Quintal)"] = df["Min Price (Rs./Quintal)"].astype(float)
     df["Max Price (Rs./Quintal)"] = df["Max Price (Rs./Quintal)"].astype(float)
     df["Modal Price (Rs./Quintal)"] = df["Modal Price (Rs./Quintal)"].astype(float)
@@ -27,7 +26,7 @@ def insert_db(df):
 
 def fetch_data(url):
     # retry = Retry(connect=10, backoff_factor=0.5)
-    response = requests.post(url, HTTPAdapter(max_retries=10))
+    response = requests.post(url)
     soup = bs(response.content, "html.parser")
 
     table = soup.find(
@@ -54,7 +53,6 @@ commodity = [[17, "Apple"], [1, "Wheat"]]
 
 districts = ['Ahemadnagar', 'Akola', 'Amarawati', 'Aurangabad', 'Bandra(E)', 'Beed', 'Bhandara', 'Buldhana', 'Chandrapur', 'Dharashiv(Usmanabad)', 'Dhule', 'Gadchiroli', 'Gondiya', 'Hingoli', 'Jalana', 'Jalgaon',
              'Kolhapur', 'Latur', 'Mumbai', 'Nagpur', 'Nanded', 'Nandurbar', 'Nashik', 'Osmanabad', 'Parbhani', 'Pune', 'Raigad', 'Ratnagiri', 'Sangli', 'Satara', 'Sholapur', 'Sindhudurg', 'Thane', 'Vashim', 'Wardha', 'Yavatmal']
-
 
 
 state = ['MH', 'Maharashtra']
