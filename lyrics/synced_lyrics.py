@@ -10,7 +10,7 @@ UNDERLINE = '\033[4m'
 RESET = '\033[0m'
 BRIGHT_RED = '\033[91m'
 
-songs = glob.glob("./lyrics/sample_music/*.mp3")
+songs = glob.glob("D:/UpdateMusic/Deemix/*.mp3")
 link = 'https://lrclib.net/api/get'
 failed = []
 success = []
@@ -26,7 +26,7 @@ for song in songs:
         'album_name': mp3file['album'][0],
         'duration': mp3file.info.length
     }
-    
+
     try:
         print(
             f"Getting lyrics for {BRIGHT_MAGENTA}{UNDERLINE}{params['track_name']}{RESET}")
