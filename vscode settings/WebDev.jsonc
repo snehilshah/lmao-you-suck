@@ -1,0 +1,306 @@
+{
+    // fonts
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    "chat.editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "editor.inlayHints.fontFamily": "'JetBrainsMono Nerd Font'",
+    "notebook.output.fontFamily": "'JetBrainsMono Nerd Font'",
+    "editor.codeLensFontFamily": "'JetBrainsMono Nerd Font'",
+    "scm.inputFontFamily": "'JetBrainsMono Nerd Font'",
+    "markdown.preview.fontFamily": "'MonoLisa Trial Regular'",
+    "errorLens.fontFamily": "'MonoLisa Trial Regular'",
+    // Font Design
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "normal",
+    // // APC
+    // "apc.activityBar": {
+    // 	"position": "bottom",
+    // 	"hideSettings": true,
+    // 	"size": 32,
+    // 	"itemSize": 28
+    // },
+    // "apc.listRow": {
+    // 	"lists": ["explorer-folders-view", "quick-input-list"],
+    // 	"height": 24,
+    // 	"fontSize": 12
+    // },
+    // "apc.statusBar": {
+    // 	"position": "editor-bottom",
+    // 	"height": 24,
+    // 	"fontSize": 12
+    // },
+    // "apc.stylesheet": {
+    // 	".sidebar": "border: none !important",
+    // 	// changing cursor to gradient
+    // 	".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)"
+    // },
+    // New Apc
+    "apc.font.family": "MonoLisa Trial",
+    // Remove titlebar
+    "apc.header": {
+        "height": 37
+    },
+    "apc.sidebar.titlebar": {
+        "height": 37
+    },
+    "apc.stylesheet": {
+        // More round borders!
+        ".sidebar": "border: none !important",
+        ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #d0679d20 10%, #5de4c7 100%)",
+        ".monaco-dialog-modal-block": "border-radius:6px;",
+        ".monaco-text-button": "border-radius:6px;",
+        ".monaco-inputbox": "border-radius:6px",
+        ".suggest-input-container": "border-radius: 6px;",
+        ".editor-widget": "border-radius:8px !important;",
+        ".editor-widget>.monaco-sash": "display: none;",
+        ".monaco-hover": "border-radius: 6px !important;",
+        // Thiner and rounder slider
+        ".scrollbar.horizontal": "height:6px !important",
+        ".vertical>.slider": "width:6px !important",
+        ".slider": "border-radius:6px;",
+        // Commmand pallete
+        ".quick-input-widget": {
+            "width": " 640px !important; ",
+            // adjust the command pallete position
+            "left": "calc(50% - 50px) !important;",
+            "top": "calc(50% - 300px) !important;",
+            "box-shadow": " 0 20px 100px rgba(0, 0, 0, 0.4) !important; ",
+            "border-radius": "13px !important; ",
+            "padding": " 10px 15px 0px 15px; ",
+            "margin-top": " 10%; ",
+            "border": " 1px solid rgba(128, 128, 128, 0.5) !important;"
+        },
+        ".quick-input-header": "margin-bottom: 10px",
+        // More shadows!
+        ".suggest-widget": "box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);",
+        ".suggest-details": "box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);"
+    },
+    // Activity and statusbar
+    "apc.activityBar": {
+        "size": 32,
+        "itemSize": 28,
+        "position": "bottom",
+        "hideSettings": true
+    },
+    "apc.statusBar": {
+        "position": "bottom",
+        "height": 26,
+        "fontSize": 12
+    },
+    //*terminal*
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.rightClickBehavior": "default",
+    "terminal.integrated.minimumContrastRatio": 1, // prevent vscode from modifying the terminal colors
+    "accessibility.signals.terminalCommandFailed": {
+        "sound": "on",
+        "announcement": "auto"
+    },
+    // *debug console*
+    "debug.console.fontFamily": "'JetBrainsMono Nerd Font'",
+    "debug.console.fontSize": 15,
+    "debug.console.lineHeight": 35,
+    // "debug.toolBarLocation": "floating",
+    // *diff editor*
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    //*files*
+    "files.autoSave": "onWindowChange",
+    "files.trimTrailingWhitespace": false,
+    "files.defaultLanguage": "${activeEditorLanguage}",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/*.class": true,
+        "**/*.exe": true,
+        "**/.next": true,
+        "**/.vscode": true,
+        "**/node_modules": true,
+        "**/.idea": true,
+        "**/package-lock.json": true,
+        "**/.eslintrc.cjs": true
+    },
+    //*workbench*
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.list.smoothScrolling": true,
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.decorations.badges": true,
+    "workbench.startupEditor": "none",
+    "workbench.editor.labelFormat": "short",
+    "workbench.sideBar.location": "left",
+    "workbench.editor.customLabels.patterns": {
+        "**/app/**/page.tsx": "${dirname(1)}"
+    },
+    //*cursor*
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "line",
+    "editor.cursorSmoothCaretAnimation": "on",
+    //*format*
+    "editor.formatOnSave": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnPaste": false,
+    //*editor*
+    "editor.trimAutoWhitespace": false, // KEEP FALSE: After save the indentation is not correct
+    "editor.stickyScroll.enabled": true,
+    "editor.quickSuggestions": {
+        "strings": true,
+        "comments": "on",
+        "other": "on"
+    },
+    "editor.snippets.codeActions.enabled": true,
+    "editor.wordWrapColumn": 80,
+    "editor.wrappingIndent": "same",
+    "editor.formatOnType": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.lineNumbers": "on",
+    "editor.glyphMargin": false,
+    "editor.lineHeight": 25,
+    "editor.gotoLocation.multipleDeclarations": "gotoAndPeek",
+    "editor.gotoLocation.multipleDefinitions": "gotoAndPeek",
+    "editor.gotoLocation.multipleImplementations": "gotoAndPeek",
+    "editor.gotoLocation.multipleReferences": "gotoAndPeek",
+    "editor.gotoLocation.multipleTypeDefinitions": "gotoAndPeek",
+    "editor.hideCursorInOverviewRuler": false, // comes handy sometimes
+    "editor.scrollbar.horizontalScrollbarSize": 8,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.quickSuggestionsDelay": 10,
+    //*ui*
+    "editor.suggest.showStatusBar": false,
+    "editor.smoothScrolling": true,
+    "editor.dragAndDrop": false,
+    "search.collapseResults": "auto",
+    "editor.foldingImportsByDefault": false,
+    "window.title": "${activeFolderMedium}${separator} ${folderName}",
+    "window.commandCenter": true,
+    "breadcrumbs.filePath": "on",
+    // *minimap*
+    "editor.minimap.enabled": true,
+    "editor.minimap.autohide": true,
+    "editor.minimap.maxColumn": 120,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    //*suggetions*
+    "editor.acceptSuggestionOnEnter": "smart", //  <- check this
+    "editor.suggest.insertMode": "replace",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.snippetSuggestions": "inline",
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlayHints.enabled": "on", // cntrl + alt
+    "editor.parameterHints.enabled": false, // cntrl + shit + space
+    "editor.suggest.snippetsPreventQuickSuggestions": false, // otherwise suggestions dont work in snippet
+    "editor.suggest.preview": false, // confuses with co pilot suggestions
+    //*bracket*
+    "editor.bracketPairColorization.enabled": true,
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    //*autoindent*
+    "editor.autoClosingDelete": "auto",
+    "editor.guides.indentation": true, // <- looks odd if false function indent guide lines are gone
+    "editor.autoIndent": "advanced",
+    //*explorer*
+    "explorer.sortOrder": "default",
+    "explorer.autoReveal": true,
+    "explorer.enableDragAndDrop": true,
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    //*problems*
+    "problems.decorations.enabled": true,
+    "problems.showCurrentInStatus": true,
+    "debug.showBreakpointsInOverviewRuler": true,
+    //*outline*
+    "outline.problems.colors": true,
+    "outline.problems.enabled": true,
+    //*git*
+    "git.autofetch": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": true,
+        "python": true
+    },
+    // *error lens*
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning"
+    ],
+    "errorLens.fontStyleItalic": true,
+    "errorLens.fontSize": "10",
+    "errorLens.fontWeight": "200",
+    // experimental
+    "editor.rulers": [],
+    "editor.inlineSuggest.showToolbar": "always",
+    "inlineChat.mode": "live",
+    "git.confirmSync": false,
+    "workbench.iconTheme": "catppuccin-latte",
+    // *web dev*
+    //*liveServer*
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    // *emmet*
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact"
+    },
+    //*javascript*
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.suggest.completeFunctionCalls": true,
+    //*typescript*
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.suggest.completeFunctionCalls": true,
+    //*html*
+    "html.format.wrapLineLength": 120,
+    //*gitlens
+    "gitlens.views.contributors.avatars": true,
+    "gitlens.codeLens.enabled": true,
+    //*indent
+    "editor.tabSize": 2,
+    "editor.indentSize": "tabSize",
+    "editor.detectIndentation": true,
+    "editor.linkedEditing": true,
+    // *Prettier*
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.useTabs": true,
+    // "prettier.semi": true,
+    // "prettier.singleQuote": true,
+    "workbench.colorCustomizations": {
+        "[Material Theme Darker High Contrast]": {
+            "activityBarBadge.background": "#84FFFF",
+            "activityBar.activeBorder": "#84FFFF",
+            "list.activeSelectionForeground": "#84FFFF",
+            "list.inactiveSelectionForeground": "#84FFFF",
+            "list.highlightForeground": "#84FFFF",
+            "scrollbarSlider.activeBackground": "#84FFFF50",
+            "editorSuggestWidget.highlightForeground": "#84FFFF",
+            "textLink.foreground": "#84FFFF",
+            "progressBar.background": "#84FFFF",
+            "pickerGroup.foreground": "#84FFFF",
+            "tab.activeBorder": "#84FFFF",
+            "notificationLink.foreground": "#84FFFF",
+            "editorWidget.resizeBorder": "#84FFFF",
+            "editorWidget.border": "#84FFFF",
+            "settings.modifiedItemIndicator": "#84FFFF",
+            "settings.headerForeground": "#84FFFF",
+            "panelTitle.activeBorder": "#84FFFF",
+            "breadcrumb.activeSelectionForeground": "#84FFFF",
+            "menu.selectionForeground": "#84FFFF",
+            "menubar.selectionForeground": "#84FFFF",
+            "editor.findMatchBorder": "#84FFFF",
+            "selection.background": "#84FFFF40",
+            "statusBarItem.remoteBackground": "#84FFFF"
+        }
+    },
+    "materialTheme.accent": "Sky",
+    "workbench.colorTheme": "Noir Poimandres",
+    "gitlens.views.commitDetails.files.layout": "list",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.productIconTheme": "Tabler"
+}
