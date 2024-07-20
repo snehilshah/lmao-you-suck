@@ -1,8 +1,13 @@
+# File 1
+# Update the path of the input file line 8
+# Update the path of the output file line 18 **do not change /%s.pdf**
+# `pip install pdfquery PyPDF2` **run this command in the terminal**
+# Run the code
+
 from PyPDF2 import PdfWriter, PdfReader
 import pdfquery
 
-
-inp = 'PDF/Cards/M974_1001_Comm.pdf'
+inp = ''
 inputpdf = PdfReader(open(inp, "rb"))
 
 for i in range(len(inputpdf.pages)):
@@ -15,5 +20,5 @@ for i in range(len(inputpdf.pages)):
     output = PdfWriter()
     output.add_page(inputpdf.pages[i])
     res = res.replace("/", "_")
-    with open("./PDF/Files/res/%s.pdf" % res, "wb") as outputStream:
+    with open("/%s.pdf" % res, "wb") as outputStream:
         output.write(outputStream)
