@@ -2,10 +2,7 @@ import pandas as pd
 import pdfquery
 import glob
 
-
-
-
-files = glob.glob("./PDF/Test.pdf")
+files = glob.glob("./test/**")
 
 for file in files:
     pdf = pdfquery.PDFQuery(file)
@@ -13,7 +10,7 @@ for file in files:
 
 
 #convert the pdf to XML
-    id = pdf.pq('LTTextBoxHorizontal:in_bbox("176.2, 254.55, 226.973, 265.55")').text()
+    id = pdf.pq('LTTextLineHorizontal:in_bbox("137.93, 137.518, 186.399, 147.478")').text()
     res = id.strip().strip('-').strip()
     print(res)
 

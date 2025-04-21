@@ -36,7 +36,7 @@
 		"size": 32,
 		"itemSize": 28,
 		"position": "bottom",
-		"hideSettings": true,
+		"hideSettings": true
 	},
 	"apc.statusBar": {
 		"position": "bottom",
